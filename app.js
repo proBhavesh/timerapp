@@ -12,7 +12,7 @@ const DOB = new Date(b);
 
 countDown();
 
-setInterval(countDown, 100);
+setInterval(countDown, 1000);
 // month / day / year;
 
 function countDown() {
