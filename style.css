@@ -63,3 +63,8 @@ h1 {
 	font-weight: bold;
 	justify-content: left;
 }
+
+.credit-d {
+	position: absolute;
+	bottom: 2px;
+}
