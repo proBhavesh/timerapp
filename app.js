@@ -6,16 +6,29 @@ const minsEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 const milisecEl = document.getElementById("miliseconds");
 
-var b = prompt("Enter your Dob Format - DD/MM/YY (11 May 2001)");
+// var b = prompt("Enter your Dob Format - DD/MM/YY (11 May 2001)");
 
-const DOB = new Date(b);
+function send() {
+	var input = document.getElementById("data-to").value;
+	const DOB = new Date(input);
+	console.log(DOB);
 
-countDown();
+	countDown(DOB);
 
-setInterval(countDown, 1000);
+	setInterval(countDown, 1000, DOB);
+
+	console.log("ran");
+}
+
+// const DOB = new Date(input);
+
+// countDown();
+
+// setInterval(countDown, 1000);
+
 // month / day / year;
 
-function countDown() {
+function countDown(DOB) {
 	const currentDate = new Date();
 
 	var cyear = currentDate.getFullYear();
