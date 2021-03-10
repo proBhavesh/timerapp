@@ -22,7 +22,7 @@ function send() {
 
 // const DOB = new Date(input);
 
-// countDown();
+// countDown(); this is countdown
 
 // setInterval(countDown, 1000);
 
